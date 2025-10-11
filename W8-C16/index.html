@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts | Week 8 - Class 16</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Tirra:wght@400;500;600;700;800;900&display=swap');
+
+
+        body {
+            background-color: #f0f0f0;
+            font-family: Ubuntu, sans-serif; /* San-serif(Generic Family) will generate any available san-serif font if mentioned families will not work. */
+        }
+
+        /* Here ubuntu is not working, So know that, you will not get a clear sign if your font is not working, so it's better to get from Google fonts */
+
+        h1 {
+            font-family: Calibri, 'Trebuchet MS';
+        }
+
+        @font-face {
+            font-family: RandomFont;
+            src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf);
+            font-weight: 300;
+            font-stretch: condensed;
+        }
+
+        #imported {
+            font-family: Asimovian;
+            font-weight: 400;
+            color: red;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Tags/Properties</h1>
+    <h2>Fonts</h2>
+    <ul>
+        <li>font-family</li>
+        <li>font-weight</li>
+        <li>Custom font-family</li>
+    </ul>
+
+    <hr>
+    <h3>Custom Font</h3>
+    <p style="color: rgb(255, 70, 70); font-family: RandomFont;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta rem cumque distinctio blanditiis, eius a sit neque perferendis commodi facilis eaque suscipit dolorum tempora, deserunt necessitatibus, repellat repellendus sequi officiis.</p>
+
+    <hr>
+
+    <h3>Imported font with @import instead of link tag</h3>
+    <p id="imported">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas voluptatum nihil officiis qui animi voluptatibus modi quia quas magnam veniam quo vitae assumenda quod ipsum itaque, nesciunt accusamus suscipit ipsam!</p>
+</body>
+</html>

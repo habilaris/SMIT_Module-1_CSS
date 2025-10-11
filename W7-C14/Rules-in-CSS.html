@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules in CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rules in CSS,</h1>
+    <h3>These rules decide that in which priority, CSS will apply its styles to.</h3>
+    <ol>
+        <li>
+            Important: This will be prioritized the most.
+            <br>
+            Syntax: <br>
+            <ul>
+                <li>body {background: red !important}</li>
+            </ul>
+            
+        </li>
+        <br>
+        <li>
+            Specificity: CSS priorites the selector which is more specified, rather than a general one.
+            <br>
+            Example: <br>
+            <ul>
+                <li>nav > ul > li {} will be priotized over just li {}, if you want to target an element inside a navbar.</li>
+            </ul>
+        </li>
+        <br>
+        <li>
+            Last Rule: CSS prioritizes the selector which is written in the last in code.
+            <br>
+            Example: <br>
+            <ul>
+                <li>nav > ul > li {} will be priotized over just li {}, if you want to target an element inside a navbar.</li>
+            </ul>
+        </li>
+    </ol>
+    <br><br>
+    <h1>Inheritance in CSS</h1>
+    <p>Inheritance in CSS states that how some values of properties are passed down to its children automatically.</p>
+    <div id="inheritance-parent">
+        <div id="inheritance-child"></div>
+    </div>
+    <br>
+    <a href="index.html">Go back to home</a>
+</body>
+</html>

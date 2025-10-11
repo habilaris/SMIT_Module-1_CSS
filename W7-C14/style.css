@@ -1,0 +1,39 @@
+body {
+    background: hsl(228, 31%, 6%);
+    color: white;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 40px 60px;
+}
+
+#parent1 > h1 + p {
+    background: hsl(232, 36%, 17%);
+}
+
+#parent2 > h1 ~ p {
+    background: hsl(232, 36%, 17%);
+}
+
+label {
+    color: rgb(181, 181, 181);
+}
+
+a {
+    color: white;
+}
+
+#inheritance-parent {
+    display: grid;
+    place-items: center;
+    border: 1px solid white;
+    height: 160px;
+    width: 460px;
+    margin: 20px;
+
+}
+
+#inheritance-child {
+    border: 1px solid white;
+    height: 120px;
+    width: 260px;
+
+}

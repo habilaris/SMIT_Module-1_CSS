@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors in CSS | Week 7 - Class 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>More Selectors in CSS</h1>
+    <Ol>
+        <li>
+            Child Selector: To Select a child element by giving the reference of its parent. 
+            <br>
+            Syntax: 
+            <ul>
+                <li>li &gt; a </li>
+                <li>nav &gt; ul &gt; li</li>
+            </ul>
+        </li>
+        <br>
+        <li>
+            Decendant Selector: Selects any element that is a child of another specified element (not just a direct child of that element, also its grandchildrens).
+            <br>
+            Syntax: 
+            <ul>
+                <li>li a </li>
+                <li>nav ul li</li>
+            </ul>
+        </li>
+        <br>
+        <li>
+            Adjacent Sibling Selector: Selects the first sibling element of the referenced element (which is after it). <br>
+            Syntax: 
+            <ul>
+                <li>h1 + p</li>
+                <li>h2 + h3</li>
+            </ul>
+        </li>
+        <br>
+        <li>
+            General Sibling Selector: Selects all the siblings of the referenced element (which are after it). <br>
+            Syntax: 
+            <ul>
+                <li>h1 - p</li>
+                <li>h2 - h3</li>
+            </ul>
+        </li>
+    </Ol>
+    <br>
+    <h2>Example:</h2>
+    <div id="parent1">
+        <label>Selecting and highligting paragraph sibling after heading with Adjacent Selector:</label>
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aspernatur aut quam ipsam accusantium, vel cupiditate nesciunt, sequi deserunt atque ipsa, pariatur nobis adipisci repellat minus maiores sapiente eligendi ullam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptates?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid repellat nisi veniam dolore atque obcaecati, accusantium autem incidunt rem debitis?</p>
+    </div>
+    <br><br>
+    <div id="parent2">
+        <label>Selecting and highligting paragraph sibling after heading with General Selector:</label>
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aspernatur aut quam ipsam accusantium, vel cupiditate nesciunt, sequi deserunt atque ipsa, pariatur nobis adipisci repellat minus maiores sapiente eligendi ullam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptates?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid repellat nisi veniam dolore atque obcaecati, accusantium autem incidunt rem debitis?</p>
+    </div>
+
+    <br>
+    <a href="Rules-in-CSS.html">Rules in CSS on next page...</a>
+</body>
+</html>

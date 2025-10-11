@@ -1,0 +1,40 @@
+body {
+    height: 2000px;
+}
+
+.parent {
+    border: 1px solid black;
+    height: 500px;
+    width: 300px;
+    background: #dedede;
+    margin: 20px;
+    padding: 20px;
+    overflow-y: auto;
+
+}
+
+.child {
+    height: 80px;
+    width: 80px;
+    border: 2px solid rgb(127, 0, 0);
+    background: red;
+    /* position: fixed; */
+    /* top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+
+
+    /* Fixed element position will stay fixed, no matter how much you scroll, it also takes no content space */
+    /* Fixed position always takes reference of html object(and its viewports) even if its parent has a position of relative */
+}
+
+
+.child2 {
+    height: 80px;
+    width: 80px;
+    border: 2px solid rgb(127, 0, 0);
+    background: red;
+    position: sticky;
+    top: 50;
+}

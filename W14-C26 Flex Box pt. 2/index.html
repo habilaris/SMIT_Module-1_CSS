@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        body {
+            background: hsl(0, 0%, 10%);
+            color: white;
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .parent {
+            border: 2px solid white;
+            height: 500px;
+            width: 50vw;
+            border-radius: 15px;
+            padding: 20px;
+
+            display: flex;
+            /* flex-direction: column; */
+            flex-direction: row;
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            flex-wrap: nowrap;
+
+            justify-content: center;
+            align-items: center;
+            /* align-content: center;  */
+            /* Correct way, Align items work but not well because it adds extra or unexpected gap with flex row column, for flex row column we use align-content */
+
+            /* column-gap: 30px; */
+            /* row-gap: 30px; */
+
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 2px solid white;
+        }
+
+        .box:first-child {
+            align-self: center;
+            /* Aign-self  only works with cross axis */
+            order: 1; /* Highest number element will go on last and lowest will go first*/
+            background: red;
+        }
+
+        .box:nth-child(2) {
+            background: blue;
+        }
+        .box:nth-child(3) {
+            background: rgb(135, 223, 34);
+        }
+        .box:nth-child(4) {
+            background: rgb(255, 0, 132);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <!-- <div class="box">5</div>
+        <div class="box">6</div> -->
+    </div>
+</body>
+</html>

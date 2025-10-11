@@ -1,0 +1,23 @@
+.contentbox {
+    /* margin: auto; */
+    box-sizing: content-box;
+}
+
+.borderbox {
+    box-sizing: border-box;
+}
+
+.contentbox, .borderbox {
+    border: 2px solid black;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+}
+.parent {
+    display: flex;
+    border: 1px solid black;
+    background: rgb(206, 206, 206);
+    justify-content: space-around;
+    align-items: center;
+
+}

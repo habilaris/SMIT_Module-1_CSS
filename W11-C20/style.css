@@ -1,0 +1,23 @@
+ul {
+    list-style: none;
+    /* border: 1px solid black; */
+    width: fit-content; 
+    /* Instead of taking full width of its parent(100%), "fit-content" only takes width of how much content it has --like an inline element */
+    
+    margin: auto; /* Takes equal margin from left and right */
+    padding: 0;
+
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav>ul>li {
+    padding: 10px 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav>ul>li:hover{
+    border: 1px solid black;
+}
+

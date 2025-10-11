@@ -1,0 +1,88 @@
+body {
+    background: rgb(25, 25, 25);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+
+.box-container {
+    gap: 30px;
+    display: flex;
+}
+
+.boxes {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: crimson;
+
+
+    display: grid;
+    place-items: center;
+
+}
+
+#box-1 {
+    /* transform: matrix(1.3, 10deg, 10deg); */
+    transition: transform 0.5s ease-in 1s;
+    /* transition: property duration timing-function delay; */
+
+    cursor: pointer;
+    /*
+    transform: matrix(a, b, c, d, tx, ty);
+    
+    a: Represents the scaleX() value and also contributes to horizontal skewing.
+    b: Represents the skewY() value.
+    c: Represents the skewX() value.
+    d: Represents the scaleY() value and also contributes to vertical skewing.
+    tx: Represents the translateX() value, moving the element along the x-axis.
+    ty: Represents the translateY() value, moving the element along the y-axis. 
+
+    */
+
+    &:hover {
+        transform: matrix(1.1, 0.1, 0.2, 0.8, -50, 20);
+    }
+
+    /* 
+    
+    transition-property: background-color; Which property to animate
+    transition-duration: 0.5s;             How long the transition takes 
+    transition-timing-function: ease;      Speed curve
+    transition-delay: 0s;                  When it starts 
+    
+    transition: property duration timing-function delay;
+
+    */
+}
+
+#box-2 {
+    transform: translateY(50%); 
+    /* transform: translateX(50%);  */
+    /* transform: translate(50%, 100%);  */
+    /* translate(X-axis, Y-axis)*/  
+}
+
+#box-3 {
+    transform: scale(0.8);  /* scale(X-axis, Y-axis) */ 
+    /* transform: scaleX(0.8); */
+    /* transform: scaleY(0.8); */
+}
+
+#box-4 {
+    transform: skewX(10deg);
+}
+
+#box-5 {
+    transform: rotate(20deg);
+    transition: transform 0.3s ease-in 0s;
+    cursor: default;
+
+    &:hover {
+        transform: rotate(40deg);
+    }
+}

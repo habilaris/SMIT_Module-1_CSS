@@ -1,0 +1,80 @@
+body {
+    background: rgb(52, 52, 52);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    height: 120dvh;
+    font-size: 22px;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
+}
+
+.grid-items {
+    border: 2px solid white;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    background: hsl(289, 83%, 47%);
+    grid-column: 1/6;
+    /* Grid-column-start and grid-column-end combination */
+}
+
+#body {
+    
+    grid-column: 2/5;
+}
+
+#footer {
+    background: hsl(307, 83%, 47%);
+    /* This time I wont use the short-hand */
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+#left-bar {
+    background: hsl(348, 83%, 47%);  
+    /* grid-row: 2/5; */
+    /* Grid-row-start and grid-row-end combination */
+
+    /* grid-row-start: 2;
+    grid-row-end: 5; */
+}
+
+#body {
+    background: hsl(248, 83%, 47%);
+}
+
+#right-bar {
+    background: hsl(48, 83%, 47%);
+}
+
+
+#left-bar, #body, #right-bar {
+    height: 80dvh;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    #left-bar {
+        display: none;
+    }
+
+    #body {
+        grid-column: 1/6;
+    }
+
+    #right-bar{ 
+        display: none;
+    }
+}
